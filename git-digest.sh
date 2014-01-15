@@ -34,7 +34,7 @@ REPONAME=`basename "$1"`
 TEMP_FILENAME="/tmp/git-digest-${REPONAME}"
 REPO_PATH="$1"
 RECIPIENT="$2"
-SUBJECT="Web Store Git Digest (${REPONAME} master)"
+SUBJECT="Weekly Git Digest for ${REPONAME}"
 
 rm $TEMP_FILENAME 2&>1
 touch  $TEMP_FILENAME
