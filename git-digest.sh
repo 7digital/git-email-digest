@@ -36,7 +36,7 @@ REPO_PATH="$1"
 RECIPIENT="$2"
 SUBJECT="Weekly Git Digest for ${REPONAME}"
 
-rm $TEMP_FILENAME 2&>1
+rm $TEMP_FILENAME 2>&1
 touch  $TEMP_FILENAME
 cd $REPO_PATH
 git pull --rebase origin master > /dev/null 2>&1
