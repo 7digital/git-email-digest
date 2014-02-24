@@ -39,7 +39,7 @@ SUBJECT="Weekly Git Digest for ${REPONAME}"
 rm $TEMP_FILENAME 2>&1
 touch  $TEMP_FILENAME
 cd $REPO_PATH
-git pull --rebase origin master > /dev/null 2>&1
+git pull > /dev/null 2>&1
 echo "Commits released or pending release on master this week" >> $TEMP_FILENAME
 echo "-------------------------------------------------------" >> $TEMP_FILENAME
 git log --pretty='%an : %s' --after="last week" &>> $TEMP_FILENAME
